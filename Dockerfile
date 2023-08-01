@@ -17,6 +17,6 @@ RUN pip install --no-cache-dir --upgrade -r /back_end/requirements.txt
 COPY . /back_end
 
 # 
-CMD ["uvicorn", "app:app", "--host=0.0.0.0", "--port=9000", "--reload"]
+CMD ["uvicorn", "app:app", "--host=0.0.0.0", "--port=80", "--reload"]
 
-EXPOSE 9000/tcp
+EXPOSE 80/tcp
